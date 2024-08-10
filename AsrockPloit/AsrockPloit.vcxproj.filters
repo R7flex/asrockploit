@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="entry.cpp" />
+    <ClCompile Include="pdbparser.cpp">
+      <Filter>pdbparser</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="pdbparser">
+      <UniqueIdentifier>{02469d25-d4cd-405d-ba7c-93d7cfa84a9b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="asrdrv">
+      <UniqueIdentifier>{9f6fee4e-6607-4b77-93e5-ed9fd48738ae}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ntdll">
+      <UniqueIdentifier>{5a0e300a-8f3c-4f1a-abce-0ace861017de}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="protect">
+      <UniqueIdentifier>{b4ef866b-207a-4900-9ff0-cab1a50e3815}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="pdbparser.h">
+      <Filter>pdbparser</Filter>
+    </ClInclude>
+    <ClInclude Include="asrdrv107.h">
+      <Filter>asrdrv</Filter>
+    </ClInclude>
+    <ClInclude Include="ntdll.h">
+      <Filter>ntdll</Filter>
+    </ClInclude>
+    <ClInclude Include="crypt.h">
+      <Filter>protect</Filter>
+    </ClInclude>
+    <ClInclude Include="defs.h" />
+  </ItemGroup>
+</Project>
